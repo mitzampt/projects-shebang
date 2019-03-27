@@ -1,0 +1,17 @@
+Bargaining is the fourth stage / Blueprints
+
+The one file is a merge of multiple file types within segments separated by shebang section headers
+
+#!/usr/bin/env project-toolshed
+#! make %1
+ [default]
+   cc %this -o progname
+#! link -l boost
+#! tool-cc -o progname
+#include<stdio>
+
+void main(void)
+{
+ printf("Hello, tool!");
+}
+#! test main
