@@ -1,0 +1,10 @@
+Denial is stage one / Blueprints
+
+simple files to be used as shebang one-liners
+
+example:
+#!/usr/bin/env linux-x86-glibc-c-run.cmd
+#!/usr/bin/env cross-windows-x86-glibc-cpp-test.cmd
+#!/usr/bin/env linux-x64-glibc-c-make.cmd
+
+All configs are symlink combinations installed by the script.
