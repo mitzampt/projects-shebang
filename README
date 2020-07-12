@@ -8,5 +8,14 @@ link -the libs
 debug -the binary
 install 
 env builtin-unit-testing
+doc -generate documentation
 
 #solution should range from simple shebang short-hand lines to fully preprocessed shebang (#!) markup
+
+#alternatives researched:
+    -> polyglots: there are several ways to embed shell script into code, for example trimming the header or a section using sed before sending the pre-preprocessed file to compiler, with disadvantages that line numbers and syntax highlighting are no longer reliable
+    -> local script: destroys the concept of one file
+    -> adding markup to preprocessing - turning the files into a shell archive (this way you can embed the editing of relevant sections)
+    this last one can be an advanced polyglot, it may not fit to some editing/ide sensibilities 
+    -> uuencoded script to be chained through an interpreter such as awk or sed hidden in symbolic #define-s, this is a sensible topic as the script is not visible, maybe an extract/insert call could help
+
