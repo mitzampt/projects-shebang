@@ -3,9 +3,9 @@
 #This repository is a collection of scripts and code in order to tie a toolchain to software projects contained within one file.
 #One file should describe the code as well as the means to:
 make -the project
-cc code -to binary 
+compile -to binary 
 link -the libs
-gdb -the binary
+debug -the binary
 install 
 env builtin-unit-testing
 
